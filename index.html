@@ -5,6 +5,11 @@
         border-width: 1px;
         margin-left: 840px;
         position: absolute;
+        display:relative;
+        justify-content:center;
+        align-items:center;
+        position: absolute;
+        margin-top: 400px;
     }
 
     .logo {
@@ -18,25 +23,31 @@
         color: white;
     }
 
-    ul {
+    .first-ul {
     list-style-type: none;
      margin: 0;
     padding: 0;
     }
 
-    li {
+    .first-li {
         display: inline;
         padding: 10px;
     }
     li a{
         display: block;
     }
-    .bar {
-        display:relative;
-    justify-content:center;
-    align-items:center;
-    position: absolute;
-    margin-top: 400px;
+
+    .second-ul {
+        position: absolute;
+        margin-top: 835px;
+        background-color: rgb(221, 215, 215);
+        padding: 0;
+        
+        
+        
+    }
+    li {
+        display: inline;
     }
 
 </style>
@@ -54,25 +65,35 @@
         
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
         
-    <div class ="bar">
+    <div class ="search">
         <form action="Search">
             <input class="search-bar">
         </form>
      </div>
 
      <div>
-        <ul>
-            <li style="float:left"><a href="default.asp">About</a></li>
-            <li style="float:left"><a href="news.asp">Store</a></li>
-            <li style="float:right"><button class="button" type="Sign-In">Sign in</button></li>
-            <li style="float:right"><i class="material-icons">apps</i></li>
-            <li style="float:right"><a href="about.asp">Images</a></li>
-            <li style="float:right"><a href="contact.asp">Gmail</a></li>
+        <ul class="first-ul">
+            <li class="first-li" style="float:left"><a href="#">About</a></li>
+            <li class="first-li" style="float:left"><a href="#">Store</a></li>
+            <li class="first-li" style="float:right"><button class="button" type="Sign-In">Sign in</button></li>
+            <li class="first-li" style="float:right"><i class="material-icons">apps</i></li>
+            <li class="first-li" style="float:right"><a href="#">Images</a></li>
+            <li class="first-li" style="float:right"><a href="#">Gmail</a></li>
             </ul>
     </div>
-    
-          
 
+   <div>
+    <ul class="second-ul">
+        <li style="float:left" a href="#">Advertising</a></li>
+        <li style="float:left" a href="#">Business</a></li>
+        <li style="float left" a href="#">How Search works</a></li>
+        <li style="float:right" a href="#">Settings</a></li>
+        <li style="float:right" a href="#">Terms</a></li>
+        <li style="float:right" a href="#">Privacy</a></li>
+        
+       
+    </ul>
+    </div>
             
     </body>
 </html>
