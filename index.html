@@ -4,21 +4,75 @@
         border-radius: 10px;
         border-width: 1px;
         margin-left: 840px;
+        position: absolute;
     }
+
     .logo {
+        position: absolute;
         margin-top: 270px;
         margin-left: 800px;
     }
+
+    .button{
+        background-color: blue;
+        color: white;
+    }
+
+    ul {
+    list-style-type: none;
+     margin: 0;
+    padding: 0;
+    }
+
+    li {
+        display: inline;
+        padding: 10px;
+    }
+    li a{
+        display: block;
+    }
+    .bar {
+        display:relative;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    margin-top: 400px;
+    }
+
 </style>
+
 <html lang="en">
     <head>
         <title>Google</title>
     </head>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
     <body>
+        
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        
+    <div class ="bar">
         <form action="Search">
             <input class="search-bar">
         </form>
-       
+     </div>
+
+     <div>
+        <ul>
+            <li style="float:left"><a href="default.asp">About</a></li>
+            <li style="float:left"><a href="news.asp">Store</a></li>
+            <li style="float:right"><button class="button" type="Sign-In">Sign in</button></li>
+            <li style="float:right"><i class="material-icons">apps</i></li>
+            <li style="float:right"><a href="about.asp">Images</a></li>
+            <li style="float:right"><a href="contact.asp">Gmail</a></li>
+            </ul>
+    </div>
+    
+          
+
+            
     </body>
 </html>
