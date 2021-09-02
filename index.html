@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <style>
     .search-bar {
-        border-radius: 10px;
+        border-radius: 20px;
         border-width: 1px;
-        margin-left: 840px;
+        margin-left: 680px;
         position: absolute;
         display:relative;
         justify-content:center;
         align-items:center;
         position: absolute;
-        margin-top: 400px;
+        margin-top: 370px;
+        height: 40px;
+        width: 550px;
+        background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+        background-repeat: no-repeat;
+        background-position: left;
         
     }
 
+    .search-bar:hover {
+        box-shadow: 0 1px 1px rgb(224, 220, 220);
+        background: white;
+        border: 1px solid #c6c6c6;
+        color: rgb(173, 169, 169);
+
+    }
 
     .logo {
         position: absolute;
@@ -21,6 +33,7 @@
     }
 
     .button1 {
+        cursor:pointer;
         color: white;
         border-radius: 5px;
         border: none;
@@ -29,32 +42,65 @@
         background-color: #1a73e8 
     }
         
-        
+    .button2 {
+        cursor:pointer;
+        margin-left: 800px;
+        position: absolute;
+        display:relative;
+        justify-content:center;
+        align-items:center;
+        position: absolute;
+        margin-top: 440px;
+        color: rgb(53, 52, 52);
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        padding: 8px 22px;
+        background-color: #f4f5f7 
+    }
+
+    .button3 {
+        cursor:pointer;
+        margin-left: 950px;
+        position: absolute;
+        display:relative;
+        justify-content:center;
+        align-items:center;
+        position: absolute;
+        margin-top: 440px;
+        color: rgb(53, 52, 52);
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        padding: 8px 22px;
+        background-color: #f4f5f7 
+    }
 
     .ul-first {
         list-style-type: none;
+        font-size: 20px;
         margin: 0;
-        padding: 0;
-        
+        padding: 0; 
     }
 
     .li-first {
         display: inline;
-        margin: 10px;
-        
+        margin: 10px;   
     }
 
     .ul-second {
-    background-color: rgb(228, 226, 226);
+    background-color: rgba(245, 238, 238, 0.658);
     overflow: hidden;
     position: fixed;
     bottom: 0;
     width: 97%;
+
     }
 
     .li-second {
         display: inline;
         margin: 8px;
+        
     }
 
     a {
@@ -63,8 +109,11 @@
         font-size: 12px;
     }
 
-    
-  
+    .a2 {
+        color:rgb(80, 79, 79);
+        text-decoration: none;
+        font-size: 13px;
+    }
 
 
 </style>
@@ -72,10 +121,13 @@
 <html lang="en">
     <head>
         <title>Google</title>
+        <link rel="icon" type="image/ico" href="favicon.ico"/>
     </head>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
+     
 
 
     <body>
@@ -85,11 +137,12 @@
         <div class ="search">
             <form action="Search">
             <input class="search-bar">
+
              </form>
         </div>
 
-        <button type="submit">Google Search</button>
-        <button type="submit">I'm Feeling Lucky</button>
+        <button type="submit" class ="button2">Google Search</button>
+        <button class="button3" type="submit">I'm Feeling Lucky</button>
 
         <ul class="ul-first">
             <li class="li-first"><a href="#">About</a></li>
@@ -101,12 +154,12 @@
         </ul> 
 
         <ul class="ul-second">
-            <li class="li-second"><a href="#">Advertising</a></li>
-            <li class="li-second"><a href="#">Business</a></li>
-            <li class="li-second"><a href="#">How Search works</a></li>
-            <li style="float:right" class="li-second"><a href="#">Privacy</a></li>
-            <li style="float:right" class="li-second"><a href="#">Terms</a></li>
-            <li style="float:right"class="li-second"><a href="#">Settings</a></li>
+            <li class="li-second"><a class="a2" href="#">Advertising</a></li>
+            <li class="li-second"><a class="a2" href="#">Business</a></li>
+            <li class="li-second"><a class="a2" href="#">How Search works</a></li>
+            <li style="float:right" class="li-second"><a class="a2" href="#">Privacy</a></li>
+            <li style="float:right" class="li-second"><a class="a2" href="#">Terms</a></li>
+            <li style="float:right"class="li-second"><a class="a2" href="#">Settings</a></li>
 
             
     </body>
