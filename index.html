@@ -23,31 +23,28 @@
         color: white;
     }
 
-    .first-ul {
-    list-style-type: none;
-     margin: 0;
-    padding: 0;
-    }
-
-    .first-li {
-        display: inline;
-        padding: 10px;
-    }
-    li a{
-        display: block;
-    }
-
-    .second-ul {
-        position: absolute;
-        margin-top: 835px;
-        background-color: rgb(221, 215, 215);
+    .ul-first {
+        list-style-type: none;
+        margin: 0;
         padding: 0;
-        
-        
-        
     }
-    li {
+
+    .li-first {
         display: inline;
+        margin: 10px;
+    }
+
+    .ul-second {
+    background-color: rgb(228, 226, 226);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 97%;
+    }
+
+    .li-second {
+        display: inline;
+        margin: 8px;
     }
 
 </style>
@@ -65,35 +62,29 @@
         
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
         
-    <div class ="search">
-        <form action="Search">
+        <div class ="search">
+            <form action="Search">
             <input class="search-bar">
-        </form>
-     </div>
+             </form>
+        </div>
 
-     <div>
-        <ul class="first-ul">
-            <li class="first-li" style="float:left"><a href="#">About</a></li>
-            <li class="first-li" style="float:left"><a href="#">Store</a></li>
-            <li class="first-li" style="float:right"><button class="button" type="Sign-In">Sign in</button></li>
-            <li class="first-li" style="float:right"><i class="material-icons">apps</i></li>
-            <li class="first-li" style="float:right"><a href="#">Images</a></li>
-            <li class="first-li" style="float:right"><a href="#">Gmail</a></li>
-            </ul>
-    </div>
+        <ul class="ul-first">
+            <li class="li-first"><a href="#">About</a></li>
+            <li class="li-first"><a href="#">Store</a></li>
+            <li style="float:right" class="li-first"><button type="submit">Sign in</button></li>
+            <li style="float:right" class="li-first"><i class="material-icons">apps</i></li>
+            <li style="float:right" class="li-first"><a href="#">Images</a></li>
+         <li style="float:right" class="li-first"><a href="#">Gmail</a></li>   
+        </ul> 
 
-   <div>
-    <ul class="second-ul">
-        <li style="float:left" a href="#">Advertising</a></li>
-        <li style="float:left" a href="#">Business</a></li>
-        <li style="float left" a href="#">How Search works</a></li>
-        <li style="float:right" a href="#">Settings</a></li>
-        <li style="float:right" a href="#">Terms</a></li>
-        <li style="float:right" a href="#">Privacy</a></li>
-        
-       
-    </ul>
-    </div>
+        <ul class="ul-second">
+            <li class="li-second"><a href="#">Advertising</a></li>
+            <li class="li-second"><a href="#">Business</a></li>
+            <li class="li-second"><a href="#">How Search works</a></li>
+            <li style="float:right" class="li-second"><a href="#">Privacy</a></li>
+            <li style="float:right" class="li-second"><a href="#">Terms</a></li>
+            <li style="float:right"class="li-second"><a href="#">Settings</a></li>
+
             
     </body>
 </html>
