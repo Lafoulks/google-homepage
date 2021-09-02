@@ -1,1 +1,1 @@
-A clone of the Google homepage.
+A clone of the Google homepage, and my first coding project.
